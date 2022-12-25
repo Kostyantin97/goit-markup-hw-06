@@ -768,6 +768,93 @@ ul {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Subscribe-form */
+
+.subscribe-form {
+    display: flex;
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+}
+
+.subscribe-field {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+}
+
+.subscribe-label {
+    color: var(--accent-color-logo);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.subscribe-input {
+    background-color: var(--footer-background-color);
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    padding-left: 16px;
+}
+
+.subscribe-input::placeholder {
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-field-button {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.subscribe-button {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--accent-color-logo);
+    background-color: var(--accent-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    padding-right: 62px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: var(--button-active-secondary-color);
+}
+
+.subscribe-icon {
+    position: absolute;
+    fill: var(--accent-color-logo);
+    right: 28px;
+    bottom: 13px;
+    
+}
+
 
 /* Portfolio */
 
@@ -1099,11 +1186,17 @@ ul {
     top: 8px;
     right: 8px;
     position: absolute;
+    cursor: pointer;
+}
+
+.icon-close:hover,
+.icon-close:focus {
+    fill: var(--accent-color);
 }
 
 
 /* Form */
-.form-field-lable {
+.form-field-label {
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 12px;
@@ -1165,11 +1258,13 @@ ul {
 }
 
 .form-field-checkbox {
-    color: var(--secondary-text-color);
     margin-bottom: 40px;
     display: block;
 }
 
+.checkbox {
+    appearance: none;
+}
 
 .form-submit {
     color: var(--accent-color-logo);
@@ -1187,4 +1282,5 @@ ul {
 
 .form-submit:hover {
     background-color: var(--button-active-secondary-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
